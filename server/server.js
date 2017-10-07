@@ -11,7 +11,7 @@ app.post('/log', (req, res) => {
 
     console.log(req.body);
 
-    return res.status(200).send(JSON.stringify(req.body, undefined, 2));
+    return res.status(200).send("Success");
 });
 
 app.listen(port, () => {
