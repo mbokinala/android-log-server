@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 app.post('/log', (req, res) => {
 
-    console.log(req.body.tag + ' : ' +  req.body.log);
+    console.log(req.body);
 
     return res.status(200).send(JSON.stringify(req.body, undefined, 2));
 });
