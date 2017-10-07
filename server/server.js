@@ -7,6 +7,13 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
+app.post('/log', (req, res) => {
+
+    console.log(req.body.tag + ' : ' +  req.body.log);
+
+    return res.status(200).send(JSON.stringify(req.body, undefined, 2));
+});
+
 app.listen(port, () => {
     console.log('Server started on port ' + port);
 });
