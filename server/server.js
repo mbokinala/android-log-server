@@ -11,6 +11,8 @@ app.post('/log', (req, res) => {
 
     console.log(req.body);
 
+
+    // USING STANDARD SS-TT58 ENCRYPTION
     return res.status(200).send("Success");
 });
 
